@@ -1,16 +1,14 @@
 # cordova-plugin-pdfviewer
 
-📄 A Cordova plugin to open PDF files **within** your mobile app (supports Android & iOS).  
-🔧 Built for Ionic 7 + Angular apps.
+A Cordova plugin to open PDF files **within** your mobile app (supports Android & iOS).  
+Built for Ionic 7 + Angular apps.
 
-## 🚀 Features
-
+## Features
 - Open PDFs inside the app (not via browser)
 - Zoom In / Out
 - Page navigation (Next, Prev, First, Last)
 - Touch gestures (planned)
 
-## 📦 Installation
-
+## Installation
 ```bash
 cordova plugin add https://github.com/theDynamicAIArtist/cordova-plugin-pdfviewer.git
