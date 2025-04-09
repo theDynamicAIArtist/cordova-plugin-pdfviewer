@@ -1,0 +1,17 @@
+{
+  "name": "cordova-plugin-pdfviewer",
+  "version": "1.0.0",
+  "description": "A simple Cordova PDF viewer plugin",
+  "cordova": {
+    "id": "cordova-plugin-pdfviewer",
+    "platforms": ["android", "ios"]
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "pdf",
+    "viewer"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="cordova-plugin-pdfviewer" version="1.0.0"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <name>PdfViewer</name>
+    <description>Cordova PDF Viewer Plugin</description>
+    <license>MIT</license>
+
+    <!-- JS Interface -->
+    <js-module src="www/PdfViewer.js" name="PdfViewer">
+        <clobbers target="cordova.plugins.PdfViewer" />
+    </js-module>
+
+    <!-- Android native file -->
+    <platform name="android">
+        <source-file src="src/android/PdfViewer.java" target-dir="src/com/pdf/viewer" />
+        <config-file target="AndroidManifest.xml" parent="application">
+         <activity android:name="com.pdf.viewer.PdfViewerActivity"
+              android:exported="true"
+              android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        </config-file>
+
+    </platform>
+
+    <!-- iOS native file -->
+    <platform name="ios">
+        <source-file src="src/ios/PdfViewer.swift" />
+    </platform>
+</plugin>
